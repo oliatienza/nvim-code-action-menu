@@ -19,7 +19,7 @@ local function format_summary_for_action(action, index)
   local kind = format_action_kind(action:get_kind())
   local title = action:get_title()
   local disabled = action:is_disabled() and ' [disabled]' or ''
-  return formatted_index .. kind .. title .. disabled
+  return kind .. title .. disabled .. formatted_index
 end
 
 local MenuWindow = StackingWindow:new()
