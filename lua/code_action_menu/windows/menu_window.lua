@@ -12,14 +12,23 @@ local function format_action_kind(action_kind)
   return '(' .. action_kind .. ') '
 end
 
+local function action_prefix()
+  if vim.g.code_action_menu_action_prefix == nil then
+    return ' > '
+  else
+    return vim.g.code_action_menu_action_prefix
+  end
+end
+
 local function format_summary_for_action(action, index)
   vim.validate({ ['action to format summary for'] = { action, 'table' } })
 
+  local prefix = action_prefix()
   local formatted_index = ' [' .. index .. '] '
   local kind = format_action_kind(action:get_kind())
   local title = action:get_title()
   local disabled = action:is_disabled() and ' [disabled]' or ''
-  return '• ' .. kind .. title .. disabled .. formatted_index
+  return prefix .. kind .. title .. disabled .. formatted_index
 end
 
 local MenuWindow = StackingWindow:new()
