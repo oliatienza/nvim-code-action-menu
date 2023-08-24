@@ -10,6 +10,16 @@ nnoremap <buffer> 6 <cmd>lua require('code_action_menu').select_line_and_execute
 nnoremap <buffer> 7 <cmd>lua require('code_action_menu').select_line_and_execute_action(7)<CR>
 nnoremap <buffer> 8 <cmd>lua require('code_action_menu').select_line_and_execute_action(8)<CR>
 nnoremap <buffer> 9 <cmd>lua require('code_action_menu').select_line_and_execute_action(9)<CR>
+nnoremap <buffer> 0 <cmd>lua require('code_action_menu').select_line_and_execute_action(10)<CR>
+nnoremap <buffer> q <cmd>lua require('code_action_menu').select_line_and_execute_action(11)<CR>
+nnoremap <buffer> w <cmd>lua require('code_action_menu').select_line_and_execute_action(12)<CR>
+nnoremap <buffer> e <cmd>lua require('code_action_menu').select_line_and_execute_action(13)<CR>
+nnoremap <buffer> r <cmd>lua require('code_action_menu').select_line_and_execute_action(14)<CR>
+nnoremap <buffer> t <cmd>lua require('code_action_menu').select_line_and_execute_action(15)<CR>
+nnoremap <buffer> y <cmd>lua require('code_action_menu').select_line_and_execute_action(16)<CR>
+nnoremap <buffer> u <cmd>lua require('code_action_menu').select_line_and_execute_action(17)<CR>
+nnoremap <buffer> i <cmd>lua require('code_action_menu').select_line_and_execute_action(18)<CR>
+nnoremap <buffer> o <cmd>lua require('code_action_menu').select_line_and_execute_action(19)<CR>
 nnoremap <buffer> <Esc> <cmd>lua require('code_action_menu').close_code_action_menu()<CR>
 nnoremap <buffer> q <cmd>lua require('code_action_menu').close_code_action_menu()<CR>
 
